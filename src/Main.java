@@ -19,9 +19,9 @@ public class Main extends JFrame {
         setLocationRelativeTo(null); // Centra la ventana en la pantalla.
 
         // Etiquetas para indicar qué dato ingresar en cada campo.
-        JLabel lblNombre = new JLabel("Nombre:");
-        JLabel lblPrecio = new JLabel("Precio:");
-        JLabel lblStock = new JLabel("Stock:");
+        JLabel lblNombre = new JLabel("Nombre:", SwingConstants.CENTER);     
+        JLabel lblPrecio = new JLabel("Precio:", SwingConstants.CENTER);
+        JLabel lblStock = new JLabel("Stock:", SwingConstants.CENTER);
 
         // Se crean los campos donde el usuario ingresa nombre, precio y stock.
         txtNombre = new JTextField();
@@ -41,7 +41,7 @@ public class Main extends JFrame {
         add(txtStock); // Agrega el campo de texto del stock.
         add(new JLabel("")); // Agrega un espacio vacío para mantener el formato.
         add(btnRegistrar); // Agrega el botón registrar.
-        add(new JLabel("Resultado:")); // Etiqueta para mostrar el resultado.
+        add(new JLabel("Resultado:", SwingConstants.CENTER)); // Etiqueta para mostrar el resultado.
         add(new JScrollPane(txtResultado)); // Agrega un scroll para ver el contenido del texto.
 
         // Cuando se presiona el botón, ejecuta el método registrarProducto.
