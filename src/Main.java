@@ -13,8 +13,8 @@ public class Main extends JFrame {
 
     // Constructor de la ventana principal.
     public Main() {
-        setTitle("Sistema de Productos"); // Establece el título de la ventana.
-        setSize(400, 400); // Define el ancho y alto de la ventana.
+        setTitle("Control de Carga"); // Establece el título de la ventana.
+        setSize(500, 600); // Define el ancho y alto de la ventana.
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Cierra la aplicación al cerrar la ventana.*/
         setLocationRelativeTo(null); // Centra la ventana en la pantalla.
 
@@ -28,7 +28,7 @@ public class Main extends JFrame {
         txtPrecio = new JTextField();
         txtStock = new JTextField();
         btnRegistrar = new JButton("Registrar"); // Botón para guardar el producto.
-        btnRegistrar.setBackground(Color.lightGray);
+        btnRegistrar.setBackground(Color.lightGray); 
         txtResultado = new JTextArea(); // Área para mostrar resultados.
         txtResultado.setEditable(false); // Evita que el usuario modifique el resultado manualmente.
 
