@@ -62,6 +62,13 @@ public class Main extends JFrame {
 
     // Método principal que inicia la aplicación.
     public static void main(String[] args) {
+            // Se define una fuente global para la app
+            Font GlobalFont = new Font("verdana", Font.PLAIN, 20); 
+            UIManager.put("Label.font", GlobalFont); // Etiquetas
+            UIManager.put("Button.font", GlobalFont); // Botones
+            UIManager.put("TextField.font", GlobalFont); // Campos de texto
+            UIManager.put("TextArea.font", GlobalFont); // Campos de texto multilinea
+
         new Main(); // Crea una instancia de la ventana principal.
     }
 }
